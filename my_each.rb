@@ -5,8 +5,8 @@ def my_each (array)
   box = []
   i = 0 
   while i < array.length  
-  yield array[i]
-  box << i = i + 1
+  box << yield array[i]
+  i = i + 1
 end
 box
 end
